@@ -1,5 +1,5 @@
 # Joc-matriceal-de-2-persoane
-#Teoria Jocurilor
+
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -12,7 +12,6 @@ using namespace std;
 const double EPSILON = 1e-8;
 const double BIG_M = 1000000.0;
 
-// ================= SIMPLEX =================
 class UniversalSimplex {
 private:
     vector<vector<double>> tableau;
@@ -142,7 +141,6 @@ public:
     }
 };
 
-// ================= GAME THEORY =================
 
 int main() {
     int m, n;
@@ -189,7 +187,7 @@ int main() {
 
     cout << "\n>>> STRATEGII MIXTE (Simplex)\n";
 
-    // --- CALCUL STRATEGIA A ---
+  
     vector<vector<double>> A_lp;
     vector<double> b_lp;
     vector<int> signs;
@@ -208,7 +206,7 @@ int main() {
 
     vector<double> c_A(m + 1, 0); c_A[m] = 1; 
 
-    // --- CALCUL STRATEGIA B ---
+   
     vector<vector<double>> B_lp;
     vector<double> b_lp_B;
     vector<int> signs_B;
