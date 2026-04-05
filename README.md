@@ -254,7 +254,7 @@ int main() {
         double v_final = solA[m];
         cout << "Valoare joc v = " << v_final << endl;
 
-        // ===== VERIFICARE: v = P^T * Q * q =====
+  
         double v_verif = 0;
         for (int i = 0; i < m; i++) {
             double temp = 0;
